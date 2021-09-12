@@ -1,0 +1,88 @@
+/*****************************
+  Tabs
+*****************************/
+.nav-tabs {
+	border: none;
+
+	.nav-item {
+		margin-bottom: 10px;
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		.nav-link {
+			border: none;
+			font-size: 16px;
+			padding: 12px 30px;
+			border-radius: 0;
+			font-weight: 600;
+			background: $secondary;
+			color: $white;
+
+			span {
+				display: block;
+			}
+		}
+
+		.nav-link.active {
+			background: $primary;
+			color: $white;
+		}
+	}
+}
+
+/* Dark table style 01 */
+.table-bg {
+	background-repeat: no-repeat;
+}
+
+.dark-table .nav-tabs .nav-item .nav-link {
+	background-color: $gray-7;
+	color: rgba($white, 0.5);
+}
+
+.dark-table .nav-tabs .nav-item .nav-link.active {
+	background-color: #191919;
+}
+
+.table-dark {
+	border: 1px solid;
+	border-color: #191919;
+}
+
+.table-dark thead tr th {
+	border: none;
+	padding: 20px;
+	text-align: center;
+}
+
+.table-dark tr th {
+	background-color: #191919;
+	color: rgba($white, 0.5);
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.table-dark tr td {
+	background: $gray-7;
+	font-size: 14px;
+	font-weight: normal;
+	color: rgba($white, 0.4);
+	padding: 20px;
+	text-align: center;
+}
+
+.table-dark tr td .coach-avatar{
+	justify-content: center;
+}
+
+/* Dark table style 02 */
+.table-dark.table-dark-style-02 {
+    border-color: $black;
+}
+
+.table-dark.table-dark-style-02 tr th {
+	background-color: $black;
+}

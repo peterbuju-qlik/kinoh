@@ -1,0 +1,26 @@
+.classe-item {
+	.classe-image {
+		position: relative;
+	}
+
+	.classe-meta {
+		position: relative;
+		background: $gray-9;
+		display: flex;
+		justify-content: center;
+		padding: 10px 16px;
+		margin: -20px 20px 0 20px;
+		li {
+			position: relative;
+
+			a {
+				font-size: 12px;
+				color: $white;
+				font-weight: 600;
+			}
+
+		}
+
+	}
+
+}

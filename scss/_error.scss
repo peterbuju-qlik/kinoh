@@ -1,0 +1,26 @@
+/*****************************
+  Not Found
+*****************************/
+.error-404 {
+  h1 {
+    font-size: 300px;
+    line-height: 300px;
+    margin-bottom: 30px;
+    color: $secondary;
+
+  }
+
+  strong {
+    font-size: 30px;
+    line-height: 30px;
+    color: $gray-8;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+}

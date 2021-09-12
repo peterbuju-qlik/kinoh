@@ -1,0 +1,297 @@
+/*****************************
+	Gallery
+*****************************/
+.my-shuffle-container {
+	margin-left: -15px;
+	margin-right: -15px;
+
+	.grid-item {
+		width: 33.33%;
+		padding: 15px;
+	}
+}
+
+.grid-item{
+ .portfolio-item {
+	position: relative;
+	overflow: hidden;
+	  &:before {
+      content: "";
+      background: rgba($gray-9, 0.8);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      z-index: 9;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+      .portfolio-info {
+        opacity: 1;
+        bottom: 15px;
+      }
+    }
+	.portfolio-img {
+		margin-left: auto;
+
+		i {
+			font-size: 20px;
+		}
+	}
+
+	.portfolio-category {
+		margin-bottom: 5px;
+		a {
+			font-size: 14px;
+			font-weight: 600;
+			color: $white;
+			margin-right: 8px;
+	    	&:hover {
+			  color: $gray-9;
+		    }
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	.portfolio-info {
+	    position: absolute;
+	    width: 95%;
+	    bottom: -60px;
+	    left: 50%;
+	    padding: 15px;
+	    opacity: 0;
+	    z-index: 99;
+	    transform: translate(-50%, 0%);
+	    transition: all 0.3s ease-in-out;
+	    background: $primary;
+		.portfolio-title {
+		color: $white;
+		font-size: 24px;
+		font-weight: 600;
+		font-family: $font-hedding;
+		display: block;
+		&:hover {
+			color: $gray-9;
+		}
+	   }
+	}
+	.portfolio-icon{
+		a{
+	      position: absolute;
+	      right: 0;
+	      top: -15px;
+	      opacity: 0;
+	      color: $white;
+	      margin: 15px;
+	      display: flex;
+	      width: 50px;
+	      height: 50px;
+	      background: $primary;
+	      display: flex;
+	      justify-content: center;
+	      align-items: center;
+	      z-index: 99;
+	 }
+   }
+ }
+  &:hover {
+    .portfolio-item {
+      .portfolio-icon {
+        a {
+          top: 0;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.single-pagination {
+	a{
+	   color:$gray-8;
+	    &:hover{
+           color:$primary;
+	    }
+    } 
+}
+
+.my-shuffle-container {
+	.portfolio-item {
+		.portfolio-info {
+			margin-bottom: 0px;
+		}
+
+	}
+
+}
+
+.filters-group {
+	display: table;
+	margin: 0 auto 50px;
+	text-align: center;
+
+	button {
+		margin: 0 1px 4px;
+		padding: 12px 20px;
+		cursor: pointer;
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 600;
+		color: $white;
+		background: $secondary;
+		border: none;
+		transition: all 0.3s ease;
+
+		span {
+			display: block;
+		}
+
+		&:hover {
+			background: $primary;
+			color: $white;
+		}
+
+	}
+
+	button.active {
+		background: $primary;
+		color: $secondary;
+	}
+
+}
+
+.bg-dark .portfolio-item {
+	.portfolio-info {
+		.portfolio-title {
+			color: $white;
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+	}
+
+}
+
+/*************************************
+         shuffle
+ *************************************/
+.my-shuffle-container.grid-style {
+	.grid-item {
+		padding: 0 !important;
+	}
+
+}
+
+.my-shuffle-container.columns-1 {
+	.grid-item {
+		width: 100%;
+		padding: 15px;
+	}
+
+}
+
+.my-shuffle-container.columns-2 {
+	.grid-item {
+		width: 50%;
+		padding: 15px;
+		float: left;
+	}
+
+}
+
+.my-shuffle-container.columns-3 {
+	.grid-item {
+		width: 33.33333333%;
+		padding: 15px;
+	}
+
+}
+
+.my-shuffle-container.columns-4 {
+	.grid-item {
+		width: 25%;
+		padding: 10px;
+	}
+
+}
+
+.my-shuffle-container.columns-5 {
+	.grid-item {
+		width: 20%;
+		padding: 15px;
+	}
+
+}
+
+.my-shuffle-container.columns-6 {
+	.grid-item {
+		width: 16.666666%;
+		padding: 15px;
+	}
+
+}
+
+// masonry
+.masonry.my-shuffle-container {
+	.grid-item {
+		padding: 15px;
+		float: left;
+	}
+
+	.m-col-3 {
+		width: 25%;
+	}
+
+	.m-col-4 {
+		width: 40%;
+	}
+
+	.m-col-5 {
+		width: 50%;
+	}
+
+	.m-col-6 {
+		width: 50%;
+	}
+
+	.m-col-7 {
+		width: 65%;
+	}
+
+}
+
+@media (max-width:767px) {
+	.my-shuffle-container .grid-item,
+	.my-shuffle-container.columns-3 .grid-item,
+	.my-shuffle-container.columns-4 .grid-item,
+	.my-shuffle-container.columns-5 .grid-item,
+	.my-shuffle-container.columns-6 .grid-item {
+		width: 50%;
+	}
+
+}
+
+@media (max-width:575px) {
+	.my-shuffle-container.columns-2 .grid-item,
+	.my-shuffle-container .grid-item {
+		width: 100%;
+	}
+
+	.my-shuffle-container .grid-item,
+	.my-shuffle-container.columns-2 .grid-item,
+	.my-shuffle-container.columns-3 .grid-item,
+	.my-shuffle-container.columns-4 .grid-item,
+	.my-shuffle-container.columns-5 .grid-item,
+	.my-shuffle-container.columns-6 .grid-item {
+		width: 100%;
+	}
+
+}
