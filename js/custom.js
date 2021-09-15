@@ -477,3 +477,20 @@ POTENZA.slidesfullscreen = function () {
     POTENZA.carousel();
   });
 })(jQuery);
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  // ** FADE OUT FUNCTION **
+  function fadeOut(el) {
+      el.style.opacity = 1;
+      (function fade() {
+          if ((el.style.opacity -= .03) < 0) {
+              el.style.display = "none";
+          } else {
+              requestAnimationFrame(fade);
+          }
+      })();
+  };
+  console.log("doc loaded")
+  fadeOut(document.getElementById("kinoh-preloader"))
+  fadeOut(document.getElementById("kinoh-status"))
+})

@@ -47,8 +47,8 @@
 <body class="dark-page">
 
 <!-- Pre-loader -->
-<div class="preloader" id="preloader">
-  <div class="status" id="status">&nbsp;</div>
+<div id="kinoh-preloader">
+  <div id="kinoh-status">&nbsp;</div>
 </div>
 
 <!--=================================
@@ -1116,24 +1116,5 @@ Javascript -->
 
   <!-- Template Scripts (Do not remove)-->
   <script src="js/custom.js"></script>
-  <script>
-document.addEventListener("DOMContentLoaded", function(event) 
-{
-  // ** FADE OUT FUNCTION **
-  function fadeOut(el) {
-      el.style.opacity = 1;
-      (function fade() {
-          if ((el.style.opacity -= .03) < 0) {
-              el.style.display = "none";
-          } else {
-              requestAnimationFrame(fade);
-          }
-      })();
-  };
-  console.log("doc loaded")
-  fadeOut(document.getElementById("preloader"))
-  fadeOut(document.getElementById("status"))
-})
-  </script>
 </body>
 </html>

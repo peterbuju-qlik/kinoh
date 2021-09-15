@@ -64,7 +64,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
     Typography
 *****************************/
 /* PRE LOADER */
-.preloader {
+#kinoh-preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -76,7 +76,7 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
   width: 100%;
   overflow: hidden !important;
 }
-.status {
+#kinoh-status {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -88,11 +88,6 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
   -webkit-background-size: cover;
   background-size: cover;
   margin: -20px 0 0 -20px;
-}
-
-.preloader-opaque {
-  opacity: 0.5;
-  background-color: grey;
 }
 
 body {
