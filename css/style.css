@@ -1004,7 +1004,8 @@ hr.hr-dark {
   width: 42%;
   background: #000000;
   position: absolute;
-  top: 0; }
+  top: 0; 
+  right: 0; }
 
 /* Margin negative */
 .m-n1 {
@@ -1394,7 +1395,8 @@ hr.hr-dark {
   /*our-since*/
   .our-since {
     padding: 20px;
-    width: 70%; } }
+    width: 42%;
+    text-align: center; } }
 
 /*****************************
   Shortcodes
