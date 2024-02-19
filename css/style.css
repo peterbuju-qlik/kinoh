@@ -496,14 +496,32 @@ iframe {
   color: #e9760a !important; }
 .text-primary-stroke{
   color: #e9760a !important; 
-  -webkit-text-stroke: 0.5px black !important; }
+ /*-webkit-text-stroke: 0.5px black !important; */
+  text-shadow:
+  -1px -1px 0 #000,
+    0   -1px 0 #000,
+    1px -1px 0 #000,
+    1px  0   0 #000,
+    1px  1px 0 #000,
+    0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000; }
 .text-secondary {
   color: #000000 !important; }
 .text-white {
   color: #ffffff; }
 .text-white-stroke {
   color: #ffffff;
-  -webkit-text-stroke: 0.75px black;
+  /*-webkit-text-stroke: 0.75px black;*/
+  text-shadow:
+  -1px -1px 0 #000,
+    0   -1px 0 #000,
+    1px -1px 0 #000,
+    1px  0   0 #000,
+    1px  1px 0 #000,
+    0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000; }
 }
 .text-dark {
   color: #333333 !important; }
